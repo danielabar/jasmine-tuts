@@ -1,0 +1,33 @@
+{
+  "name": "jasmine-tuts",
+  "version": "0.0.1",
+  "homepage": "https://github.com/danielabar/jasmine-tuts",
+  "authors": [
+    "danielabar"
+  ],
+  "description": "Learning JavaScript unit testing with Jasmine",
+  "main": "SpecRunner.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "JavaScript",
+    "Jasmine",
+    "testing"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "jasmine-jquery": "~2.0.5"
+  }
+}

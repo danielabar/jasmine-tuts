@@ -19,6 +19,7 @@ module.exports = function(grunt) {
       test : {
         files : [
           'Gruntfile.js',
+          'SpecRunner.html',
           'src/**/*.js',
           'spec/**/*.js'
         ],
