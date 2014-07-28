@@ -50,5 +50,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['connect:test', 'watch:test']);
+  grunt.registerTask('test', ['connect:test', 'jasmine']);
 
 };
