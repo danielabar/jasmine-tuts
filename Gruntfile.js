@@ -34,6 +34,10 @@ module.exports = function(grunt) {
     jasmine : {
       src : 'src/**/*.js',
       options : {
+        vendor : [
+          'bower_components/jquery/dist/jquery.js',
+          'bower_components/jasmine-jquery/lib/jasmine-jquery.js'
+        ],
         version: '2.0.1',
         specs: 'spec/**/*.js',
         host: 'http://0.0.0.0:9000'

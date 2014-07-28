@@ -5,11 +5,27 @@ with TutsPlus course [Javascript Testing with Jasmine](https://courses.tutsplus.
 
 ## Getting Started
 
-* Download [standalone](https://github.com/pivotal/jasmine/releases) jasmine distribution (or clone this project)
-* Extract the zip and copy to a new project folder, for example, `projects/im-learning-js-testing`
+Clone this repo, then run
+
+  ```bash
+  npm install
+  bower install
+  ```
+
+## Run tests manually
 * Launch a server from the root of your project directory
 
   ```bash
   open http://localhost:8000 && python -m SimpleHTTPServer
   ```
 * Click on `SpecRunner.html` from the directory listing displayed in the browser
+
+## Run tests automated and watch
+
+  ```bash
+  grunt
+  ```
+
+## Using jQuery with Jasmine
+
+See [jasmine-jquery](https://github.com/velesin/jasmine-jquery)
