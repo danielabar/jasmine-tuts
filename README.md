@@ -1,4 +1,4 @@
-# jasmine-tuts
+# jasmine-tuts [![Build Status](https://secure.travis-ci.org/danielabar/jasmine-tuts.png?branch=master)](https://travis-ci.org/danielabar/jasmine-tuts)
 
 > Learning [Jasmine](http://jasmine.github.io/2.0/introduction.html)
 with TutsPlus course [Javascript Testing with Jasmine](https://courses.tutsplus.com/courses/javascript-testing-with-jasmine)
