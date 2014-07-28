@@ -5,7 +5,7 @@ with TutsPlus course [Javascript Testing with Jasmine](https://courses.tutsplus.
 
 ## Getting Started
 
-Clone this repo, then:
+Clone this repo, then
 
   ```bash
   npm install
