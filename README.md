@@ -20,12 +20,25 @@ Clone this repo, then run
   ```
 * Click on `SpecRunner.html` from the directory listing displayed in the browser
 
-## Run tests automated and watch
+## Run tests automatically and continuously
 
   ```bash
   grunt
   ```
 
-## Using jQuery with Jasmine
+This runs the tests in PhantomJS against a local connect server.
+It also watches the source and tests for changes and will automatically re-run the tests on any change.
+
+### Jasmine equality matchers
+
+[Examples](spec/CalculatorSpec.js)
+
+### Other matchers
+
+[Examples](spec/ExampleSpec.js)
+
+### Using jQuery with Jasmine
 
 See [jasmine-jquery](https://github.com/velesin/jasmine-jquery)
+
+[Examples](spec/DomSpec.js)
