@@ -42,3 +42,44 @@ It also watches the source and tests for changes and will automatically re-run t
 See [jasmine-jquery](https://github.com/velesin/jasmine-jquery)
 
 [Examples](spec/DomSpec.js)
+
+### Fixtures
+
+A jasmine fixture is a fragment of html that a test can work with.
+These snippets of html are stored in their own files.
+
+By default, jasmine will load fixtures from `spec/javascripts/fixtures` folder, but this behaviour can be overridden.
+
+[Examples](spec/LearningFixtureSpec.js)
+
+#### loadFixtures
+
+Loads a fixture into the DOM
+
+  ```javascript
+  loadFixtures('fragment.html');
+  ```
+
+#### readFixtures
+
+Read a fixture and return the result as a string, does not load in DOM
+
+  ```javascript
+  var fixture = readFixtures('fragment.html');
+  ```
+
+#### setFixtures
+
+Read in html string instead of file, and append it to the dom
+
+  ```javascript
+  setFixtures('<div class="sandbox">hello there</div>');
+  ```
+
+#### Sandbox
+
+Create an HTML fragment and wrap it in jQuery
+
+  ```javascript
+  var sb = sandbox();   // [<div id="sandbox"></div>]
+  ```

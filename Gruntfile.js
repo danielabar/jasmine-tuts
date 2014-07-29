@@ -21,7 +21,8 @@ module.exports = function(grunt) {
           'Gruntfile.js',
           'SpecRunner.html',
           'src/**/*.js',
-          'spec/**/*.js'
+          'spec/**/*.js',
+          'spec/**/*.html'
         ],
         options: {
           atBegin: true,
