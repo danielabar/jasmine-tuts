@@ -83,3 +83,9 @@ Create an HTML fragment and wrap it in jQuery
   ```javascript
   var sb = sandbox();   // [<div id="sandbox"></div>]
   ```
+
+#### Spies
+
+[Doc](https://github.com/pivotal/jasmine/wiki/Spies)
+
+A spy _replaces_ the function it is spying on.
