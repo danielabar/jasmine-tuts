@@ -89,3 +89,17 @@ Create an HTML fragment and wrap it in jQuery
 [Doc](https://github.com/pivotal/jasmine/wiki/Spies)
 
 A spy _replaces_ the function it is spying on.
+
+Spies can return a value
+
+  ```javascript
+  spyOn(myObj, 'someMethod').and.returnValue('hello there');
+  ```
+
+Spies can return the result of invoking a function
+
+  ```javascript
+  spyOn(myObj, 'someMethod').and.callFake(function() {
+    return 'hello there';
+  });
+  ```

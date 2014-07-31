@@ -1,14 +1,17 @@
 var myObj = {
   someMethod: function() {
-    console.log('=== someMethod is called!');
     $.get('someFile.html', function(data) {
       return data;
     });
   }
 };
 
-var foo = {
-  setBar: function(value) {
-    bar = value;
-  }
+// Implement a simple jQuery plugin to demonstrate testing async code
+$.fn.asyncCall = function() {
+  return this.each(function() {
+    var el = $(this);
+    $.get('someFile.html', function(data) {
+      el.html(data);
+    });
+  });
 };
