@@ -5,8 +5,31 @@
     <title>Jasmine Testing Example</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .stylewords {
+        color: blue;
+        font-weight: bold;
+      }
+      .custom {
+        color: red;
+        font-size: 2em;
+      }
+    </style>
   </head>
   <body>
     <a href="SpecRunner.html">SpecRunner</a>
+    <p id="default">Hello there this is a manual test of jquery.stylewords custom plugin with default settings.</p>
+    <p id="firstthree">This paragraph is using stylewords with first three words wrapped.</p>
+    <p id="custom">This paragraph is using stylewords with first two words and a custom style.</p>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="src/jquery.stylewords.js"></script>
+
+    <script>
+      $('p#default').stylewords();
+      $('p#firstthree').stylewords(3);
+      $('p#custom').stylewords(2, {
+        'class': 'custom'
+      });
+    </script>
   </body>
 </html>

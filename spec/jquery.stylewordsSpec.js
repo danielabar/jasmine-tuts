@@ -30,7 +30,7 @@ describe("jQuery.stylewords", function() {
     expect(frag.find('span').text()).toEqual('Lorem ipsum dolor');
   });
 
-  it("Offers a defaults object on the styleords namespace", function() {
+  it("Offers a defaults object on the stylewords namespace", function() {
     expect($.fn.stylewords.defaults).toBeDefined();
   });
 
@@ -42,6 +42,11 @@ describe("jQuery.stylewords", function() {
     });
     expect(frag.find('strong').length).toEqual(1);
     expect(frag.find('strong').text()).toEqual('Lorem ipsum');
+  });
+
+  it("Applies a default class of stylewords to the wrapper", function() {
+    frag.stylewords();
+    expect(frag.find('span')).toHaveClass('stylewords');
   });
 
 });
