@@ -21,6 +21,8 @@
     <p id="default">Hello there this is a manual test of jquery.stylewords custom plugin with default settings.</p>
     <p id="firstthree">This paragraph is using stylewords with first three words wrapped.</p>
     <p id="custom">This paragraph is using stylewords with first two words and a custom style.</p>
+    <div class="container">This div gets default stylewords</div>
+    <div class="container">This div should also get default stylewords</div>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="src/jquery.stylewords.js"></script>
 
@@ -30,6 +32,7 @@
       $('p#custom').stylewords(2, {
         'class': 'custom'
       });
+      $('.container').stylewords();
     </script>
   </body>
 </html>
